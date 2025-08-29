@@ -1,1 +1,81 @@
 /* This file is intentionally left blank. */
+body {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+  color: rgb(121, 121, 230) !important;
+  text-align: center;
+}
+
+.navbar {
+  background: rgba(255, 255, 255, 0.9) !important;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.table {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  margin: 2rem auto;
+  width: 95%;
+}
+
+.table thead {
+  background: #f8f9fa;
+}
+
+.table th {
+  border-top: none;
+  color: #495057;
+  font-weight: 600;
+}
+
+.btn {
+  border-radius: 5px;
+  margin: 0 3px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: #4e73df;
+  border: none;
+}
+
+.btn-danger {
+  background: #e74a3b;
+  border: none;
+}
+
+.btn-info {
+  background: #36b9cc;
+  border: none;
+}
+
+.form-control {
+  border-radius: 7px;
+  border: 1px solid #e3e6f0;
+  padding: 0.75rem;
+}
+
+.form-control:focus {
+  border-color: #4e73df;
+  box-shadow: 0 0 0 0.2rem rgba(78, 115, 223, 0.25);
+}
+
+.alert {
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}

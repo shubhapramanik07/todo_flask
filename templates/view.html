@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>View Todo</title>
+</head>
+
+<body>
+    <div class="container my-3">
+
+
+        <h2>Todo Details</h2>
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">{{todo.title}}</h5>
+                <p class="card-text">{{todo.desc}}</p>
+                <p class="card-text"><small class="text-muted">Created on: {{todo.date_created.strftime('%Y-%m-%d
+                        %H:%M')}}</small></p>
+                <a href="/" class="btn btn-primary">Back to List</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
